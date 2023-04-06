@@ -10,12 +10,14 @@ while(1)
 
 	if(($lines[0] == 1))
 	{
+		echo($lines[0]);
 		echo("You have a fire!");
 	}
 
 
 	else
 	{
+		echo($lines[0]);
 		echo("You have a fire!");
 	}
 }
