@@ -18,7 +18,7 @@ while(1)
 	else
 	{
 		echo($lines[0]);
-		echo("You have a fire!");
+		echo("No fire!");
 	}
 }
 
