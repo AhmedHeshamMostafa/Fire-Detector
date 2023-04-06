@@ -1,13 +1,14 @@
 <?php
 
-header('Location: index.html');
+
 
 while(1)
 {
-	$statusFile = fopen("FireStatus.txt", "r");
-	or die("Unable to open the file");
+	$lines = file('file.txt');
+	$line_number = 0;
+	
 
-	if($statusFile == '1')
+	if(($lines[0] == 1))
 	{
 		header('Location: FirePage.html');
 	}
