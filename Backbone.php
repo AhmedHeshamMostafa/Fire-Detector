@@ -10,13 +10,13 @@ while(1)
 
 	if(($lines[0] == 1))
 	{
-		header('Location: FirePage.html');
+		echo("You have a fire!");
 	}
 
 
 	else
 	{
-		header('Location: NoFirePage.html');
+		echo("You have a fire!");
 	}
 }
 
