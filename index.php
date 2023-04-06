@@ -38,7 +38,7 @@
 		<br>
 		
 		To access the monitoring page, click
-		<a href="Monitor.html"> Here </a>
+		<a href="Monitor.php"> Here </a>
 		<br>
 		<br>
 		
