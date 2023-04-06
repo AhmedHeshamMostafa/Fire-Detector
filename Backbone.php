@@ -9,14 +9,12 @@ while(1)
 	if($statusFile == 1)
 	{
 		header('Location: FirePage.html');
-		exit();
 	}
 
 
 	else
 	{
-	header('Location: NoFirePage.html');
-	exit();
+		header('Location: NoFirePage.html');
 	}
 }
 
