@@ -1,18 +1,25 @@
 <?php
 
-$statusFile = fopen("FireStatus.txt", "r");
+header('Location: index.html');
 
-if($statusFile == 1)
+while(1)
 {
-	
-	header('Location: FirePage.html');
+	$statusFile = fopen("FireStatus.txt", "r");
 
-}
+	if($statusFile == 1)
+	{
+		header('Location: FirePage.html');
+		exit();
+	}
 
-else
-{
+
+	else
+	{
 	header('Location: NoFirePage.html');
+	exit();
+	}
 }
+
 
 
 
