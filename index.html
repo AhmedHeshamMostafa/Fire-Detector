@@ -11,11 +11,11 @@
 	<body>
 	<?php
         $file_contents = file_get_contents('FireStatus.txt');
-        if ($file_contents == 'F')
+        if ($file_contents == 1)
 		{
           header ("Location: FirePage.html");
 		}
-		  else if ($file_contents == 'N') 
+		  else
 		{
           header ("Location: NoFirePage.html");
         }
