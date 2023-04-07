@@ -59,6 +59,16 @@
 		</p>
 		
 		
+		<?php
+        $file_contents = file_get_contents('FireStatus.txt');
+        if ($file_contents == '0') {
+          echo '0';
+        } else if ($file_contents == '1') {
+          echo '1';
+        }
+		?>
+		
+		
 	</body>
 
 
