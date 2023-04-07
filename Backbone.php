@@ -2,34 +2,22 @@
 
 while(1)
 {
-	lines = file('FireStatus.txt');
-	$line_number = 0;
+	$file_path = 'FireStatus.txt';
+	$file_contents = file($file_path, FILE_IGNORE_NEW_LINES);
 	
-
-	if(($lines[0] == 1))
+	$value_to_check = 'F';
+	
+	if(in_array($value_to_check, $file_contents))
 	{
-		header("FirePage.html");
+		header ("Location: FirePage.html");
 	}
-
-
+	
 	else
 	{
-		header("NoFirePage.html");
+		header ("Location: index.html");
 	}
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>
