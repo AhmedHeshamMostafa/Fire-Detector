@@ -2,7 +2,7 @@
 
 while(1)
 {
-	lines = file('file.txt');
+	lines = file('FireStatus.txt');
 	$line_number = 0;
 	
 
