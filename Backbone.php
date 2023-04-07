@@ -1,10 +1,8 @@
 <?php
 
-
-
 while(1)
 {
-	/lines = file('file.txt');
+	lines = file('file.txt');
 	$line_number = 0;
 	
 
