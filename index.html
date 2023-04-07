@@ -37,8 +37,7 @@
 		<br>
 		<br>
 		
-		To access the monitoring page, click
-		<a href="Monitor.html"> Here </a>
+		
 		<br>
 		<br>
 		
@@ -61,10 +60,13 @@
 		
 		<?php
         $file_contents = file_get_contents('FireStatus.txt');
-        if ($file_contents == '0') {
-          echo '0';
-        } else if ($file_contents == '1') {
+        if ($file_contents == 'F')
+		{
           echo '1';
+		}
+		  else if ($file_contents == 'N') 
+		{
+          echo '0';
         }
 		?>
 		
