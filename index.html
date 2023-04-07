@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html>
+	<meta charset="UTF-8">
+
+	<head>
+		<title>
+		Fire Detection System
+		</title>
+	</head>
 	
 	<body>
-	<?php
+	
+		
+		<h1>
+		<br>
+		<font face = "Verdana" size = "5">Welcome to my Fire Detection System</font><br />
+		
+		</h1>
+		
+		
+		<font face = "Arial">
+		
+		<br>
+		<h4 style="line-height:19px;">
+		This is an IOT project consisting of two sides:
+	
+		<br>
+		<br>1) On the embedded side, I have a fire detector system based on STM32F103C8T6 microcontroller
+		<br>2) On the web side, I have a website that you are viewing right now &#128513;
+		</font>
+		</h4>
+		
+		<br>
+		<br>
+		
+		You can find the project details and the source code on this GitHub
+		<a href="https://github.com/AhmedHeshamMostafa/Fire-Detector.git"> Repository </a>
+		
+		<br>
+		<br>
+		To access the monitoring page, click
+		<a href=<?php
         $file_contents = file_get_contents('FireStatus.txt');
         if ($file_contents == 1)
 		{
@@ -12,8 +49,39 @@
 		{
           header ("Location: NoFirePage.html");
         }
-	?>
+		?>> Here
+		
+		</a>
+		
+		<br>
+		<br>
+		
+		<p style="font-family:'Courier New'">Designed and developed by
+		<br>		
+		Ahmed Hesham Mostafa 
+		<br>
+		Embedded Software Engineer</p>
+		<p style="font-family:'Times New Roman'">ahmed.hesham.mostafa7@gmail.com</p>
+		<br>
+		<p>
+		<a href="https://github.com/AhmedHeshamMostafa/"><img src="GitHub Logo.png"
+		width="60" 
+		height="60"</a>&nbsp;&nbsp;
+		<a href="https://www.linkedin.com/in/ahmedhesham285/"><img src="LinkedIn Logo.png"
+		width="60" 
+		height="60"</a>
+		</p>
+		
+		
+		
+		
+		
 	</body>
+
+
+
+
+
 
 
 </html>
